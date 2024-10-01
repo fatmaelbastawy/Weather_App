@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        #weather-container {
+            background: rgba(255, 255, 255, 0.3);
+            min-width: 400px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0 , 0 , 0 , 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            margin-top: 100px; /* لإفساح المساحة للهيدر */
+        }
+    </style>
+</head>
+<body>
+   
+
+    <div id="weather-container">
+        <h2 id="title">Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city or country">
+        <button id="searchBtn" onclick="getWeather()">Search</button>
+        <img id="weather-icon" alt="Weather Icon" style="display:none;">
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <div id="hourly-forecast"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fatma El Bastawy. All rights reserved.</p>
+   
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
